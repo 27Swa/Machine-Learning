@@ -1,6 +1,6 @@
 # Machine Learning Tasks: Regression from Scratch
 
-This repository explores two fundamental machine learning tasks implemented from scratch: **Linear Regression** and **Polynomial Regression**. The focus is on understanding the mathematical concepts and implementation steps without relying on external libraries. By the end of this project, you will have a solid grasp of how these algorithms work under the hood and how to implement them from the ground up.
+This repository explores two fundamental machine learning tasks implemented from scratch: **Linear Regression**, **Polynomial Regression** and **Optimizers**. The focus is on understanding the mathematical concepts and implementation steps without relying on external libraries. By the end of this project, you will have a solid grasp of how these algorithms work under the hood and how to implement them from the ground up.
 
 ---
 
@@ -51,3 +51,24 @@ For a polynomial of degree `d`, the model is given by: Y = θ₀ + θ₁X + θ�
 θⱼ := θⱼ - α * (1 / m) * Σ(hθ(xⁱ) - yⁱ) * xⁱʲ
 4. **Degree Selection:** Allow the user to choose the degree of the polynomial. Higher degrees can fit more complex patterns but may lead to overfitting. Experiment with different degrees to find the best fit.
 5. **Evaluation:** Assess the model's performance using metrics like Mean Squared Error (MSE) or R-squared. Fine-tune the parameters and degree of the polynomial as needed.
+
+## Task 3: Optimizers Implemented  
+
+### Overview  
+This task demonstrates the implementation of various gradient descent optimization techniques using a randomly generated dataset. The following optimizers are included:  
+
+- **Batch Gradient Descent**  
+- **Mini-Batch Gradient Descent**  
+- **Stochastic Gradient Descent (SGD)**  
+- **Momentum-based Gradient Descent**  
+
+The goal is to compare their performance in optimizing a simple linear regression problem.  
+
+### Optimizers Implemented  
+
+1. **Batch Gradient Descent:** This method updates the model parameters using the entire dataset in each iteration.  
+2. **Mini-Batch Gradient Descent:** Instead of using the full dataset, it updates the parameters using small batches of data, balancing efficiency and convergence speed.  
+3. **Stochastic Gradient Descent (SGD):** In this approach, the model parameters are updated after processing each individual data point, introducing more noise but sometimes achieving faster convergence.  
+4. **Momentum-based Gradient Descent:**  This method adds a fraction of the previous update to the current step, helping to accelerate convergence and avoid local minima.
+---
+  
